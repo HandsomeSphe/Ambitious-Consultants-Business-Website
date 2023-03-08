@@ -1,0 +1,205 @@
+//===============MEDIA QUERIES VARIEBLES============
+$largeDesktop: 160em; //2560
+$huge: 87.5em; //1400
+$bigger-2: 64.5em; //1000px
+$bigger-1: 62.5em; //1000px
+$big: 56.65em; //900px
+$medium: 43.75em; //700px
+$medium-2: 40.625em; //650px
+$small: 31.25em; //500px;
+$smaller: 25em; //400px
+
+/*
+////////////// Font families/////////////
+*/
+$primaryFont: "Inter", sans-serif;
+$secondaryFont: "Poppins", sans-serif;
+$paragraph-font--size: 1.51rem;
+$heading-font--size: 1.55rem;
+
+/*
+////////////// Color Scheme/////////////
+*/
+/************ Primary colors ****************/
+$primaryColor-1: #e300ffff;
+$primaryColor-2: #ffc000ff;
+$primaryColor-3: #0bb3eff4;
+
+/************ Secondary colors ****************/
+$secondaryColor-1: #f5f5f5;
+$secondaryColor-2: #ededed;
+$secondaryColor-3: #000000;
+$secondaryColor-4: rgba(0, 0, 0, 0.9);
+
+/************ Max Length ****************/
+
+/*
+////////////// @Mixins /////////////
+*/
+
+@mixin sectionHeadings {
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 7rem auto;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 4rem;
+    height: 0.6rem;
+    border-radius: 2rem;
+    background-color: #9fa1a1;
+  }
+}
+
+@mixin footerHeadings {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 5.2rem;
+    height: 0.1rem;
+    border-radius: 2rem;
+    margin-top: 0.3rem;
+    background-color: $primaryColor-2;
+  }
+}
+@mixin sectionSubheading {
+  font-size: $heading-font--size;
+  margin-bottom: 1.3rem;
+}
+
+@mixin contactInputSize {
+  border-radius: 0.5rem;
+  padding: 0.6rem 0;
+  border: none;
+  outline: none;
+}
+
+.about {
+  width: 100%;
+  max-width: 150rem;
+  height: auto;
+  padding: 2rem 4.5rem;
+
+  @media only screen and (max-width: $small) {
+    padding: 3rem 1rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    padding: 3rem 1rem;
+  }
+
+  &__title {
+    @include sectionHeadings;
+  }
+  &__subsection {
+    width: 100%;
+    height: 49rem;
+    display: flex;
+
+    @media only screen and (max-width: $small) {
+      flex-direction: column;
+      height: auto;
+    }
+    @media only screen and (max-width: $smaller) {
+      flex-direction: column;
+      height: auto;
+    }
+
+    &--image img {
+      width: 42rem;
+      margin-top: 4rem;
+      @media only screen and (max-width: $bigger-2) {
+        width: 35rem;
+        margin: 5rem 0 0 0;
+      }
+      @media only screen and (max-width: $big) {
+        width: 37rem;
+        margin: 4rem 0 0 0;
+      }
+      @media only screen and (max-width: $small) {
+        width: 42rem;
+        margin: 0;
+      }
+      @media only screen and (max-width: $smaller) {
+        width: 36rem;
+        margin: 0;
+      }
+    }
+    &--description {
+      margin-left: 4rem;
+      width: 65rem;
+      @media only screen and (max-width: $small) {
+        width: 47rem;
+        padding: 2rem;
+        margin: 0;
+      }
+      @media only screen and (max-width: $smaller) {
+        width: 46rem;
+        padding: 2rem;
+        margin: 0;
+      }
+    }
+    &--heading {
+      @include sectionSubheading;
+    }
+    &--paragraph {
+      font-size: $paragraph-font--size;
+
+      & span {
+        display: block;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
+#mission {
+  justify-content: flex-end;
+}
+#mission .about__subsection--image {
+  -ms-order: 1;
+  -webkit-order: 1;
+  order: 1;
+  margin-left: 5rem;
+
+  @media only screen and (max-width: $small) {
+    order: -1;
+    margin: 2rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    order: -1;
+    margin: 2rem;
+  }
+}
+#mission .about__subsection--paragraph {
+  margin-right: 3rem;
+  @media only screen and (max-width: $small) {
+    margin-right: 0;
+  }
+  @media only screen and (max-width: $smaller) {
+    margin-right: 0;
+  }
+}
+#bullet-points {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+#bullet-points span {
+  display: flex;
+  align-items: center;
+  font-size: $paragraph-font--size;
+  margin-bottom: 0.7rem;
+}
+#bullet-points svg {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 20rem;
+  padding: 0.5rem;
+  background-color: $primaryColor-2;
+  fill: #fff;
+  margin-right: 1rem;
+}

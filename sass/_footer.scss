@@ -1,0 +1,111 @@
+.footer {
+  width: 100%;
+  max-width: 150rem;
+  height: 33rem;
+  background-color: $secondaryColor-4;
+  padding: 3.5rem 5rem;
+  font-size: $paragraph-font--size;
+  color: $secondaryColor-1;
+  font-family: $primaryFont;
+  @media only screen and (max-width: $small) {
+    height: auto;
+    padding: 7rem 5rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    height: auto;
+    padding: 3.5rem 3rem;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $small) {
+      display: grid;
+      grid-template-columns: 20rem 15rem;
+      grid-template-rows: 35rem 20rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    @media only screen and (max-width: $smaller) {
+      margin-bottom: 2.5rem;
+    }
+    &--heading {
+      @include footerHeadings;
+      font-size: $heading-font--size;
+      margin-bottom: 2rem;
+      @media only screen and (max-width: $smaller) {
+        margin-bottom: 2rem;
+      }
+    }
+    &--image {
+      width: 20rem;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+  &__address span {
+    margin-bottom: 0.4rem;
+  }
+  &__links {
+    @media only screen and (max-width: $smaller) {
+      margin-bottom: 2.5rem;
+    }
+
+    &--heading {
+      @include footerHeadings;
+      font-size: $heading-font--size;
+      margin-bottom: 2rem;
+      @media only screen and (max-width: $smaller) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__navbar {
+    list-style-type: none;
+    &--list {
+      margin-bottom: 0.7rem;
+    }
+    &--list a {
+      text-decoration: none;
+      color: $secondaryColor-1;
+      &:hover {
+        color: $primaryColor-2;
+      }
+    }
+  }
+  &__services {
+    @media only screen and (max-width: $smaller) {
+      margin-bottom: 2.5rem;
+    }
+    &--heading {
+      @include footerHeadings;
+      font-size: $heading-font--size;
+      margin-bottom: 2rem;
+    }
+    &--service {
+      margin-bottom: 0.7rem;
+    }
+  }
+
+  &__terms {
+    &--heading {
+      @include footerHeadings;
+      font-size: $heading-font--size;
+      margin-bottom: 2rem;
+      @media only screen and (max-width: $smaller) {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+  &__terms div {
+    margin-bottom: 0.7rem;
+  }
+}

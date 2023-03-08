@@ -1,0 +1,236 @@
+.slider {
+  width: 100%;
+  height: 70rem;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  @media only screen and (max-width: $small) {
+    height: 60rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    height: 60rem;
+  }
+  &__wrapper {
+    width: 100%;
+    position: relative;
+  }
+  &__slide {
+    width: 100%;
+    height: 70rem;
+    position: absolute;
+    transition: ease-in all 0.4s;
+    animation: cubic-bezier(0.23, 1, 0.32, 1) 1 0.4s;
+    @media only screen and (max-width: $small) {
+      width: 100%;
+      height: 60rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      width: 100%;
+      height: 60rem;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 65rem;
+    @media only screen and (max-width: $small) {
+      height: 40rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      height: 40rem;
+    }
+  }
+  &__buttons {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: 110rem;
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bigger-2) {
+      top: 30rem;
+      width: 90rem;
+    }
+    @media only screen and (max-width: $big) {
+      top: 30rem;
+      width: 80rem;
+    }
+    @media only screen and (max-width: $small) {
+      top: 25rem;
+      width: 50rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      top: 25rem;
+      width: 40rem;
+    }
+
+    &--right,
+    &--left {
+      width: 3rem;
+      height: 3rem;
+      background-color: #fff;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media only screen and (max-width: $small) {
+        box-shadow: 4px 4px 50px gray;
+        background-color: $primaryColor-3;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      @media only screen and (max-width: $smaller) {
+        box-shadow: 4px 4px 50px gray;
+        background-color: $primaryColor-3;
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+      & svg {
+        width: 2rem;
+        height: 2rem;
+        @media only screen and (max-width: $small) {
+          fill: $secondaryColor-1;
+        }
+        @media only screen and (max-width: $smaller) {
+          fill: $secondaryColor-1;
+        }
+      }
+    }
+  }
+  &__details {
+    width: 50rem;
+    height: 50rem;
+    position: absolute;
+    top: 25rem;
+    left: 25rem;
+    color: #fff;
+
+    @media only screen and (max-width: $small) {
+      height: auto;
+      width: 80%;
+      padding: 1rem 1rem;
+      transform: (-50%, -10%);
+      top: 50%;
+      left: 10%;
+      background-color: #fff;
+      color: #000;
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    @media only screen and (max-width: $smaller) {
+      height: auto;
+      width: 80%;
+      padding: 1rem 1rem;
+      transform: (-50%, -10%);
+      top: 50%;
+      left: 10%;
+      background-color: #fff;
+      color: #000;
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &--title {
+      font-size: 3.4rem;
+      @media only screen and (max-width: $small) {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+      @media only screen and (max-width: $smaller) {
+        text-align: center;
+        font-size: 2.5rem;
+      }
+    }
+    &--subtitle {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+      @media only screen and (max-width: $small) {
+        font-size: 1.5rem;
+      }
+      @media only screen and (max-width: $smaller) {
+        font-size: 1.5rem;
+      }
+    }
+    &--description {
+      font-size: 1.3rem;
+      margin-bottom: 1.5rem;
+      color: rgba(255, 255, 255, 0.87);
+      @media only screen and (max-width: $small) {
+        color: #000;
+      }
+      @media only screen and (max-width: $smaller) {
+        color: #000;
+      }
+    }
+    &--button {
+      padding: 0.85rem 2rem;
+      border: none;
+      border-radius: 20rem;
+      background-color: #000;
+      color: #fff;
+      font-size: 1.3rem;
+      font-family: $primaryFont;
+      cursor: pointer;
+      transition: ease-in-out 0.2s;
+
+      &:hover {
+        background-color: $primaryColor-3;
+      }
+      @media only screen and (max-width: $small) {
+        width: 30rem;
+        font-size: 1.5rem;
+        padding: 1rem 2.7rem;
+      }
+      @media only screen and (max-width: $smaller) {
+        width: 30rem;
+        font-size: 1.5rem;
+        padding: 1rem 2.7rem;
+      }
+    }
+  }
+}
+.right__arrow--icon {
+  transform: rotate(180deg);
+}
+.mover {
+  animation: sliderDescription 1 0.5s;
+}
+.description--bullets {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+.details__points {
+  margin-bottom: 0.4rem;
+
+  &::before {
+    content: "";
+    clear: both;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-color: $primaryColor-2;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+}
+@keyframes sliderDescription {
+  0% {
+    transform: translateX(-30rem);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}

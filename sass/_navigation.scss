@@ -1,0 +1,159 @@
+.navbar {
+  width: 100%;
+  max-width: 150rem;
+  height: 7.3rem;
+  background-color: $secondaryColor-2;
+  padding: 0rem 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  overflow: hidden;
+  z-index: 999;
+  @media only screen and (min-width: $largeDesktop) {
+    width: 150rem;
+    position: fixed;
+    margin-left: -75rem;
+  }
+  @media only screen and (max-width: $small) {
+    padding: 1rem 2rem;
+    position: fixed;
+  }
+  @media only screen and (max-width: $smaller) {
+    padding: 1rem 2rem;
+    position: fixed;
+  }
+
+  &__list {
+    flex: 35% 0 0;
+    width: 100%;
+    list-style-type: none;
+    font-size: 1.5rem;
+    font-family: $primaryFont;
+    font-weight: 500;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media only screen and (max-width: $bigger-2) {
+      flex: 45% 0 0;
+    }
+    @media only screen and (max-width: $big) {
+      flex: 50% 0 0;
+    }
+    @media only screen and (max-width: $small) {
+      display: none;
+    }
+    @media only screen and (max-width: $smaller) {
+      display: none;
+    }
+    &--item {
+      &:hover:not(:last-child) {
+        &::after {
+          content: "";
+          clear: both;
+          display: block;
+          background-color: $primaryColor-1;
+          width: inherit;
+          height: 0.32rem;
+          animation: slideToRight 1.2s 1;
+          transform: animation ease-in 2s;
+          backface-visibility: hidden;
+        }
+      }
+    }
+    &--link {
+      color: #000;
+      text-decoration: none;
+      // &:focus ,
+      // &:active{
+      //     &::after{
+      //         content: "";
+      //         clear: both;
+      //         display: block;
+      //         background-color: $primaryColor-1;
+      //         width:inherit;
+      //         height:.3rem;
+
+      //      }
+      //   }
+    }
+  }
+}
+#contactTab {
+  width: 10rem;
+  height: 3rem;
+  padding: 0.4rem 0;
+  text-align: center;
+  background-color: #000;
+  border-radius: 20rem;
+  cursor: pointer;
+  & a {
+    color: #fff !important;
+    font-size: 1.4rem;
+  }
+}
+#logo {
+  width: 12.5rem;
+  height: auto;
+  cursor: pointer;
+}
+.smallScreen__menu {
+  width: 3rem;
+  height: 2rem;
+  background-color: transparent;
+  cursor: pointer;
+  display: none;
+
+  @media only screen and (max-width: $small) {
+    display: block;
+  }
+  @media only screen and (max-width: $smaller) {
+    display: block;
+  }
+}
+
+/*========= Sidebar for Small Screens ============*/
+
+.sidenavbar {
+  background-color: $primaryColor-1;
+  width: 100%;
+  height: 100vh;
+  padding: 3rem;
+  display: none;
+  transition: slideInNav ease-in 0.4s;
+  animation: slideInNav 0.4s 1;
+
+  &__close--side {
+    width: 3.5rem;
+    height: 3.5rem;
+    margin-bottom: 4rem;
+  }
+  &__list {
+    width: 100%;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+
+    & li {
+      margin-bottom: 3rem;
+    }
+
+    & li a {
+      font-size: 2rem;
+      color: #fff;
+    }
+  }
+}
+
+.showSideBar {
+  display: block;
+}
+.removeSideBar {
+  display: none;
+  visibility: hidden;
+}

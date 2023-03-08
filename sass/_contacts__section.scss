@@ -1,0 +1,127 @@
+.contacts {
+  width: 100%;
+  max-width: 150rem;
+  min-height: 85rem;
+  padding: 4rem 5rem;
+
+  &__heading {
+    @include sectionHeadings;
+    margin-bottom: 10rem;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+
+    @media only screen and (max-width: $small) {
+      flex-direction: column;
+    }
+    @media only screen and (max-width: $smaller) {
+      flex-direction: column;
+    }
+  }
+  &__form {
+    width: 32rem;
+    height: auto;
+    padding: 3rem 3.5rem;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 16rem;
+    background-color: $secondaryColor-4;
+
+    @media only screen and (max-width: $small) {
+      width: 41rem;
+      margin: 0 auto;
+      margin-bottom: 5rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      width: 37rem;
+      margin-bottom: 5rem;
+    }
+    &--heading {
+      color: $secondaryColor-1;
+      font-size: $paragraph-font--size;
+      margin-bottom: 3rem;
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+        width: 5rem;
+        height: 0.1rem;
+        background-color: $primaryColor-2;
+        margin-top: 0.3rem;
+      }
+    }
+    &--label {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: $secondaryColor-1;
+      display: flex;
+      flex-direction: column;
+    }
+    &--input {
+      margin-bottom: 1.5rem;
+      padding: 0.7rem 1rem;
+      border: none;
+      border-radius: 0.4rem;
+      margin-top: 0.5rem;
+
+      &:focus,
+      &:active {
+        outline-color: $primaryColor-2;
+      }
+    }
+    &--textarea {
+      resize: none;
+      border-radius: 0.4rem;
+      padding: 0.7rem 1rem;
+
+      &:focus,
+      &:active {
+        outline-color: $primaryColor-2;
+      }
+    }
+    &--button {
+      @include contactInputSize;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      background-color: $primaryColor-2;
+      color: $secondaryColor-1;
+      margin-top: 0.7rem;
+
+      &-svg {
+        width: 2.4rem;
+        height: 2.4rem;
+        fill: $secondaryColor-1;
+      }
+    }
+    &--button span {
+      font-size: $paragraph-font--size;
+    }
+  }
+
+  &__address {
+    @media only screen and (max-width: $small) {
+      margin: 0 auto;
+    }
+    &--heading {
+      color: $secondaryColor-3;
+      font-size: $paragraph-font--size;
+      margin-bottom: 3rem;
+      @media only screen and (max-width: $small) {
+        margin-bottom: 1.5rem;
+      }
+      @media only screen and (max-width: $smaller) {
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &__address span {
+    font-size: $paragraph-font--size;
+    display: block;
+    margin-bottom: 0.4rem;
+  }
+}

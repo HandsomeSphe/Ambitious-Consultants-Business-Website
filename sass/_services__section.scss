@@ -1,0 +1,114 @@
+.services {
+  height: auto;
+  padding: 5rem 5rem;
+  @media only screen and (min-width: $largeDesktop) {
+    max-width: 150rem;
+  }
+  @media only screen and (max-width: $small) {
+    padding: 1rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    padding: 5rem 3.5rem;
+  }
+
+  &__title {
+    @include sectionHeadings;
+  }
+  &__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: $small) {
+      display: grid;
+      grid-template-columns: 30rem 30rem;
+      grid-template-rows: 65rem 65rem;
+      grid-gap: 0.7rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  &__panel {
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $small) {
+      width: 30rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      margin-bottom: 5rem;
+    }
+
+    &--subheading {
+      @include sectionSubheading;
+      margin-bottom: 3rem;
+    }
+    &--icon {
+      width: 8rem;
+      height: 8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20rem;
+      fill: $secondaryColor-4;
+      margin-bottom: 4rem;
+    }
+    &--points {
+      height: 15rem;
+      overflow: hidden;
+      margin-bottom: 4rem;
+      transition: ease-in all 0.4s;
+      list-style-type: circle;
+    }
+    &--points li {
+      font-size: $paragraph-font--size;
+      margin-bottom: 0.8rem;
+    }
+    &--button {
+      padding: 0.7rem 2rem;
+      border: none;
+      background-color: $secondaryColor-3;
+      color: $secondaryColor-1;
+      border-radius: 3rem;
+      cursor: pointer;
+      font-size: $paragraph-font--size;
+      font-family: $secondaryFont;
+    }
+  }
+  &__panel:not(:last-child) {
+    border-right: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+    @media only screen and (max-width: $smaller) {
+      border: none;
+    }
+  }
+}
+#manage {
+  background-color: $primaryColor-1;
+}
+#admin {
+  background-color: $primaryColor-2;
+}
+#comply {
+  background-color: $primaryColor-3;
+}
+#business-management--icon {
+  width: 6rem;
+  height: 6rem;
+}
+#business-administration--icon {
+  width: 5rem;
+  height: 5rem;
+}
+#business-compliance--icon {
+  width: 5rem;
+  height: 5rem;
+}
+
+.showHeight {
+  height: 27rem;
+}

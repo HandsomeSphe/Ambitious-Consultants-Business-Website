@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Sass/styles.css">
+    <link rel="shortcut icon" href="images/Ambitious favicon.png" type="image/x-icon">
+    <title>Ambitious Business Consultant</title>
+    <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+    <meta name ="description" content="Ambitious is a business consulting business, helping business with registration, tax returns and so much more.">
+    <meta name="keywords" content="CIPC Annual Returns, Tax Returns, CIDB Registration & Upgrade, Ltter of Good Standing, CSD Update, Municipality Database, BEE Renewal, Company Profile">
+</head>
+<body>
+    <!--///////////////////// NAVIGATION BAR /////////////////
+    //////////////////////////////////////////////////////////////-->
+    <header id="header">
+        <!----=============== Sidebar ==============-->
+        <div class="sidenavbar" id="sidebar">
+            <svg class="sidenavbar__close--side" id="sidebar__close">
+                <use xlink:href="Icons/sprite.svg#icon-cross_multimedia_error_delite_icon"></use>
+            </svg>
+            <ul class="sidenavbar__list">
+                <li><a class='sidenavbar__list--link' href="#home">Home</a></li>
+                <li><a class='sidenavbar__list--link' href="about">About Us</a></li>
+                <li><a class='sidenavbar__list--link' href="#services">Services</a></li>
+                <li><a class='sidenavbar__list--link' href="#findus">Find Location</a></li>
+                <li ><a class='sidenavbar__list--link' href="#contacts">Contact Me</a></li>
+            </ul>
+        </div>
+        <!--============== Main Navigation Bar ====================-->
+        <nav id="sidebar" class="navbar">
+            <div class="navbar__logo">
+                <img src="images/ambitious logo.png" alt="logo" id="logo">
+            </div>
+            <ul class="navbar__list">
+                 <li class="navbar__list--item">
+                    <a class="navbar__list--link" href="#home">Home</a>
+                 </li>
+                 <li class="navbar__list--item">
+                    <a class="navbar__list--link" href="#about">About</a>
+                 </li>
+                 <li class="navbar__list--item">
+                    <a class="navbar__list--link" href="#services">Services</a>
+                 </li>
+                 <li class="navbar__list--item">
+                    <a class="navbar__list--link" href="#findus">Find Us</a>
+                 </li>
+                 <li class="navbar__list--item" id="contactTab">
+                    <a class="navbar__list--link" href="#contacts">Contact</a>
+                 </li>
+            </ul>
+            <svg class="smallScreen__menu" id="burgerIcon">
+                <use xlink:href="Icons/sprite.svg#icon-burger_general_ham_list_menu_icon"></use>
+            </svg>
+        </nav>
+    </header>
+    <!--///////////////////// WEBSITE SECTIONS /////////////////
+    //////////////////////////////////////////////////////////////-->
+    <main id="main">
+        <section class="home" id="home">
+            <div class="slider">
+                <form action="https://formspree.io/f/mvonrenw" enctype="multipart/form-data" method="post"  class="slider__modal">
+                    <div class="slider__modal--wrapper">
+                        <h2 class="slider__modal--heading">Fill In Form</h2>
+                        <div class="slider__modal--remove">
+                            <svg class="remove__icon">
+                                <use xlink:href="Icons/sprite.svg#icon-cross_multimedia_error_delite_icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                    <label for="firstName" class="slider__modal--label">
+                        Enter Company Name
+                        <input type="text" id="firstName" name="companyName" class="slider__modal--input">
+                    </label>
+                    <label for="number" class="slider__modal--label">
+                        Enter Phone Number
+                        <input type="number" id="number" name="phone" class="slider__modal--input">
+                    </label>
+                    <label for="email" class="slider__modal--label">
+                        Enter Email
+                        <input type="email" name="email" id="email" class="slider__modal--input">
+                    </label>
+                    <label for="service" class="slider__modal--label">Service Choosen</label>
+                    <input type="text" id="service" class="slider__modal--input">
+                    <button type="submit" class="slider__modal--submit">Submit</button>
+                </form>
+                <div class="slider__wrapper">
+                    <div class="slider__slide">
+                        <img src="./images/BackgroundImage-7.png" class="slider__image" alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Construction Compliance Update</h1>
+                            <h4 class="slider__details--subtitle title">We facilitate construction businesses</h4>
+                            <p class="slider__details--description description--bullets">
+                                <span class="details__points">CIPC Annual Returns</span>
+                                <span class="details__points">TAX Returns</span>
+                                <span class="details__points">CIDB Registration & Update</span>
+                                <span class="details__points">Letter of Good Standing</span>
+                            </p>
+                            <button class="slider__details--button" data-title="Construction Compliance">Book This Service</button>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./images/BackgroundImage-2.png" class="slider__image" alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Stakeholder management</h1>
+                            <h4 class="slider__details--subtitle title">Managing board of directors</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button" data-title="Stakeholder Management">Book This Service</button>
+                        </div>
+                    </div>
+                    <div class="slider__slide">
+                        <img src="./images/BackgroundImage-1.png" class="slider__image" alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Social Facilitation</h1>
+                            <h4 class="slider__details--subtitle title">We facilitate small businesses</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button" data-title="Social-facilitation">Book This Service</button>
+                        </div>
+                    </div>
+
+                    <!-- <div class="slider__slide">
+                        <img src="./images/BackgroundImage-3.png" class="slider__image" alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Negotiations and Conflict Management</h1>
+                            <h4 class="slider__details--subtitle title">Conflict and Dispute Management</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button">Click Here</button>
+                        </div>
+                    </div> -->
+                    <!-- <div class="slider__slide">
+                        <img src="./images/christopher-burns-8KfCR12oeUM-unsplash.jpg" class="slider__image"alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Slider 4</h1>
+                            <h4 class="slider__details--subtitle title">Company Registration</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button">Click Here</button>
+                        </div>
+                    </div> -->
+                    <!-- <div class="slider__slide">
+                        <img src="./images/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg" class="slider__image"alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Social Dialogs</h1>
+                            <h4 class="slider__details--subtitle title">Company Perspective</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button">Click Here</button>
+                        </div>
+                    </div> -->
+                    <!-- <div class="slider__slide">
+                        <img src="./images/campaign-creators-gMsnXqILjp4-unsplash.jpg" class="slider__image"alt="">
+                        <div class="slider__details">
+                            <h1 class="slider__details--title">Social Intelligence</h1>
+                            <h4 class="slider__details--subtitle title">Communicating amoung members</h4>
+                            <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
+                            <button class="slider__details--button">Click Here</button>
+                        </div>
+                    </div> -->
+                    <div class="slider__buttons">
+                        <div class="slider__buttons--left">
+                        <svg>
+                        <use xlink:href="Icons/sprite.svg#icon-arrows_navigation_arrow_left_back_icon"></use>
+                        </svg>
+                        </div>
+                        <div class="slider__buttons--right">
+                            <svg class="right__arrow--icon">
+                                <use xlink:href="Icons/sprite.svg#icon-arrows_navigation_arrow_left_back_icon"></use>
+                                </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="companies__banner">
+                <img src="./images/Sars-dark-logo.png"  class="companies__banner--logo" alt="sars-logo">
+                <img src="./images/Central supplier database dark.png" class="companies__banner--logo" alt="central-supplier-database-logo">
+                <img src="./images/Labour-logo-dark.png" class="companies__banner--logo" alt="labour-logo">
+                <img src="./images/CIPC dark logo.png" class="companies__banner--logo" id="cipc" alt="cipc-logo">
+        </div>
+        
+        <section class="about" id="about">
+             <h2 class="about__title">About Us</h2>
+
+             <div class="about__subsection" id="values">
+                <div class="about__subsection--image">
+                    <img src="./images/About us image 1.png" alt="About image 1">
+                </div>
+                <div class="about__subsection--description">
+                    <h4 class="about__subsection--heading">Our Values</h4>
+                    <p class="about__subsection--paragraph">
+                        Ambitious Business Consultant’s 
+                        core value proposition is to assist emerging contractors by identifying, 
+                        planning and implementing operational performance improvement initiatives, 
+                        in order to achieve operational performance excellence.Major benefits include:
+
+                        <div id="bullet-points">
+                            <span>
+                                <svg>
+                                    <use xlink:href="Icons/sprite.svg#icon-checkmark_round_icon"></use>
+                                </svg>
+                                Increased professionalism
+                            </span>
+                            <span>
+                                <svg>
+                                    <use xlink:href="Icons/sprite.svg#icon-checkmark_round_icon"></use>
+                                </svg>
+                                increased revenue
+                            </span>
+                            <span>
+                                <svg>
+                                    <use xlink:href="Icons/sprite.svg#icon-checkmark_round_icon"></use>
+                                </svg>
+                                reduced costs
+                            </span>
+                            <span>
+                                <svg>
+                                    <use xlink:href="Icons/sprite.svg#icon-checkmark_round_icon"></use>
+                                </svg>
+                                improved customer experience
+                            </span>
+                            <span>
+                                <svg>
+                                    <use xlink:href="Icons/sprite.svg#icon-checkmark_round_icon"></use>
+                                </svg>
+                                improved compliance and control
+                            </span>
+                        </div>
+                    </p>
+                </div>
+             </div>
+             <div class="about__subsection" id="mission">
+                <div class="about__subsection--image">
+                    <img src="./images/About image 2.png" alt="About image 2">
+                </div>
+                <div class="about__subsection--description">
+                    <h4 class="about__subsection--heading">Our Mission</h4>
+                    <p class="about__subsection--paragraph">
+                        <span>
+                            Ambitious Business Consultants is dedicated to 
+                            to providing performance improvement consulting 
+                            services that assist emerging contractors to develop
+                            and optimize their business operations.
+                        </span>
+                        <span>
+                            We would like to establish a successful partnership with Metropolitan Municipality
+                            and TVET colleges by being a consulting firm that will offer employment opportunities 
+                            to graduates in order to solve business management, administration and compliance problems 
+                            which are existing in construction sector particularly in emerging contractors.
+                        </span>
+                    </p>
+                </div>
+             </div>
+             <div class="about__subsection" id="vision">
+                <div class="about__subsection--image">
+                    <img src="./images/About us image 3.png" alt="About image 3">
+                </div>
+                <div class="about__subsection--description">
+                    <h4 class="about__subsection--heading">Our Vision</h4>
+                    <p class="about__subsection--paragraph">
+                        To be a valued Performance Improvement consultancy in South Africa, across multiple industries. 
+                        To be recognized as excellent and effective leaders in business consulting in the whole of Southern Africa, 
+                        in both public and private sector enterprises.
+                    </p>
+                </div>
+             </div>
+        </section>
+
+        <section class="services" id="services">
+             <h2 class="services__title">Our Services</h2>
+             <div class="services__wrapper">
+                <div class="services__panel">
+                    <div class="services__panel--icon" id="manage">
+                        <svg id="business-management--icon" >
+                            <use xlink:href="Icons/sprite.svg#icon-13250031605806463"></use>
+                        </svg>
+                    </div>
+                    <h4 class="services__panel--subheading">Business Management</h4>
+                    <ul class="services__panel--points" id="manageBtn">
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                    </ul>
+                    <button class="services__panel--button" id="manageBtn">See More</button>
+                </div>
+                <div class="services__panel">
+                    <div class="services__panel--icon" id="admin">
+                        <svg id="business-administration--icon">
+                            <use xlink:href="Icons/sprite.svg#icon-16096534681582799504"></use>
+                        </svg>
+                    </div>
+                    <h4 class="services__panel--subheading">Administration</h4>
+                    <ul class="services__panel--points" id="adminBtn">
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                    </ul>
+                    <button class="services__panel--button" id="adminBtn">See More</button>
+                </div>
+                <div class="services__panel">
+                    <div class="services__panel--icon" id="comply">
+                        <svg id="business-compliance--icon">
+                            <use xlink:href="Icons/sprite.svg#icon-18250023281582799504"></use>
+                        </svg>
+                    </div>
+                    <h4 class="services__panel--subheading">Compliance</h4>
+                    <ul class="services__panel--points" id="complyBtn">
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                        <li>Letter Of Good Will</li>
+                        <li>Lorem</li>
+                        <li>Dummy Text</li>
+                        <li>Special Texts</li>
+                        <li>Belong Here</li>
+                        <li>Creep Thoughts</li>
+                    </ul>
+                    <button class="services__panel--button" id="complyBtn">See More</button>
+                </div>
+             </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <h2 class="contacts__heading">Contact Us</h2>
+             <div class="contacts__wrapper">
+                 <form action="https://formspree.io/f/mvonrenw" enctype="multipart/form-data" method="post" class="contacts__form">
+                    <h4 class="contacts__form--heading">Get in touch</h4>
+                     <label for="Username" class="contacts__form--label">
+                        Company Name
+                        <input type="text" id="Username" name="name" class="contacts__form--input" required>
+                    </label>
+                     <label for="phoneNumber" class="contacts__form--label">
+                        Phone Number
+                        <input type="number" id="phoneNumber" name="number" class="contacts__form--input" required>
+                    </label>
+                     <label for="Email" class="contacts__form--label">
+                        Email
+                        <input type="email" id="Email" name="email" class="contacts__form--input" required>
+                    </label>
+                     <label for="message" class="contacts__form--label">Message</label>
+                     <textarea name="message" id="message" cols="30" rows="10" class="contacts__form--textarea contacts__form--input" ></textarea>
+                     <button class="contacts__form--button">
+                         <svg class="contacts__form--button-svg">
+                             <use xlink:href="Icons/sprite.svg#icon-plane_paper-airplane_send_airplane_multimedia_icon"></use>
+                         </svg>
+                         <span>Submit</span>
+                     </button>
+                 </form>
+                 <div class="contacts__address">
+                     <h4 class="contacts__address--heading">Our Contacts Details</h4>
+                     <span>Email address: info@ambitious.co.za</span>
+                     <span>Phone : 031 456 7890</span>
+                     <span>Phone : 061 457 9803</span>
+                 </div>
+             </div>
+        </section>
+
+        <footer class="footer" id="footer">
+            <div class="footer__wrapper">
+                <div class="footer__address">
+                    <h4 class="footer__address--heading">Physical Address</h4>
+                    <img src="./images/1200x-1.png" alt="location image" class="footer__address--image">
+                    <span>47 Ntuzuma Access Road</span>
+                    <span>JG Zuma High School</span>
+                    <span>Kwa-Mashu</span>
+                    <span>4360</span>
+                </div>
+                <nav class="footer__links">
+                    <h4 class="footer__links--heading">Important Links</h4>
+                    <ul class="footer__navbar">
+                        <li class="footer__navbar--list"><a  class="footer__navbar--link" href="#home">Home</a></li>
+                        <li class="footer__navbar--list"><a  class="footer__navbar--link" href="#about">About Us</a></li>
+                        <li class="footer__navbar--list"><a  class="footer__navbar--link" href="#services">Services</a></li>
+                        <li class="footer__navbar--list"><a  class="footer__navbar--link" href="#findus">Find Us</a></li>
+                        <li class="footer__navbar--list"><a  class="footer__navbar--link" href="#contacts">Contacts</a></li>
+                    </ul>
+                </nav>
+                <div class="footer__services">
+                    <h4 class="footer__services--heading">Services</h4>
+                    <div class="footer__services--service">CIPC Registration</div>
+                    <div class="footer__services--service">Annual Tax Restrigation</div>
+                    <div class="footer__services--service">Business Profile</div>
+                    <div class="footer__services--service">Company Name</div>
+                </div>
+                <div class="footer__terms">
+                    <h4 class="footer__terms--heading">Ambitious</h4>
+                    <div class="footer__terms--conditions">Terms and Conditions</div>
+                    <div class="footer__terms--conditions">Privacy Policy</div>
+                    <div class="footer__terms--conditions">Company Profile</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+ 
+    <script defer src="Script.js"></script>
+
+</body>
+</html>

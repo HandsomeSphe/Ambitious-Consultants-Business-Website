@@ -1,0 +1,103 @@
+.slider__modal {
+  width: 27rem;
+  height: 33rem;
+  position: absolute;
+  border-radius: 1rem;
+  top: 15rem;
+  left: 10rem;
+  background-color: #000;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 2rem 3rem;
+  transition: animation ease-in-out 0.5s;
+  animation: slidedInModal 1 0.5s;
+  display: none;
+
+  @media only screen and (max-width: $small) {
+    width: 30rem;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: none;
+  }
+  @media only screen and (max-width: $smaller) {
+    width: 30rem;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    animation: none;
+  }
+
+  &--wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &--heading {
+    font-size: $heading-font--size;
+
+    &::after {
+      content: "";
+      display: block;
+      background-color: $primaryColor-2;
+      width: 3rem;
+      height: 0.1rem;
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &--label {
+    width: 21rem;
+    font-size: 1.1rem;
+    font-family: $primaryFont;
+    margin-bottom: 0.2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  &--input {
+    height: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 0.1rem;
+    border: none;
+    margin-top: 0.2rem;
+    &:active,
+    &:focus {
+      outline-color: $primaryColor-2;
+    }
+  }
+  &--submit {
+    height: 2.5rem;
+    border: none;
+    color: #fff;
+    background-color: $primaryColor-2;
+    border-radius: 0.2rem;
+    cursor: pointer;
+  }
+}
+.showModal {
+  display: flex;
+}
+.remove__icon {
+  fill: #fff;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+
+@keyframes slidedInModal {
+  0% {
+    opacity: 0;
+    transform: translateY(20rem);
+  }
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
