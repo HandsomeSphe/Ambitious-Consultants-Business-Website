@@ -1113,11 +1113,13 @@ body {
 
 .sidenavbar__list li {
   margin-bottom: 3rem;
+  text-decoration: none;
 }
 
 .sidenavbar__list li a {
   font-size: 2rem;
   color: #fff;
+  text-decoration: none;
 }
 
 .showSideBar {

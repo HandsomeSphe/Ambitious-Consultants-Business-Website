@@ -3,6 +3,7 @@ const burgerIcon = document.getElementById("burgerIcon");
 const sideBar = document.getElementById("sidebar");
 const closeSideNav = document.getElementById("sidebar__close");
 const main = document.getElementById("main");
+const sidebarLinks = document.querySelectorAll(".sidenavbar__list--link");
 
 burgerIcon.addEventListener("click", function (e) {
   e.preventDefault();
@@ -16,6 +17,29 @@ closeSideNav.addEventListener("click", function (e) {
   sideBar.classList.remove("showSideBar");
   sideBar.classList.add("removeSideBar");
   main.style.display = "block";
+});
+
+sidebarLinks.forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    sideBar.classList.remove("showSideBar");
+    sideBar.classList.add("removeSideBar");
+    main.style.display = "block";
+    let sectionId = e.target.getAttribute("href");
+    let section = document.querySelector(sectionId);
+    section.scrollIntoView({
+      behavior: "smooth",
+    });
+  });
+});
+
+const logo = document.querySelector("#logo");
+const homePage = document.querySelector(".home");
+
+logo.addEventListener("click", function () {
+  homePage.scrollIntoView({
+    behavior: "smooth",
+  });
 });
 
 /*///////===== Functionality for Scroll Animation=====///////////*/
@@ -162,6 +186,13 @@ formbutton("create", {
       type: "email",
       label: "Email:",
       name: "email",
+      required: true,
+      placeholder: "your@email.com",
+    },
+    {
+      type: "type",
+      label: "Service Choosen:",
+      name: "service",
       required: true,
       placeholder: "your@email.com",
     },

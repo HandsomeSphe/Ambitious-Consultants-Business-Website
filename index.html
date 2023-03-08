@@ -22,7 +22,7 @@
             </svg>
             <ul class="sidenavbar__list">
                 <li><a class='sidenavbar__list--link' href="#home">Home</a></li>
-                <li><a class='sidenavbar__list--link' href="about">About Us</a></li>
+                <li><a class='sidenavbar__list--link' href="#about">About Us</a></li>
                 <li><a class='sidenavbar__list--link' href="#services">Services</a></li>
                 <li><a class='sidenavbar__list--link' href="#findus">Find Location</a></li>
                 <li ><a class='sidenavbar__list--link' href="#contacts">Contact Me</a></li>
@@ -73,18 +73,20 @@
                     </div>
                     <label for="firstName" class="slider__modal--label">
                         Enter Company Name
-                        <input type="text" id="firstName" name="companyName" class="slider__modal--input">
+                        <input type="text" id="firstName" name="companyName"required class="slider__modal--input">
                     </label>
                     <label for="number" class="slider__modal--label">
                         Enter Phone Number
-                        <input type="number" id="number" name="phone" class="slider__modal--input">
+                        <input type="number" id="number" name="phone" required class="slider__modal--input">
                     </label>
                     <label for="email" class="slider__modal--label">
                         Enter Email
-                        <input type="email" name="email" id="email" class="slider__modal--input">
+                        <input type="email" name="email" id="email" required class="slider__modal--input">
                     </label>
-                    <label for="service" class="slider__modal--label">Service Choosen</label>
-                    <input type="text" id="service" class="slider__modal--input">
+                    <label for="service" class="slider__modal--label">
+                        Service Choosen
+                        <input type="text" id="service" name="service" required class="slider__modal--input">
+                    </label>
                     <button type="submit" class="slider__modal--submit">Submit</button>
                 </form>
                 <div class="slider__wrapper">
@@ -130,15 +132,15 @@
                             <button class="slider__details--button" data-title="Negotiations and Conflicts Management">Book This Service</button>
                         </div>
                     </div>
-                    <!-- <div class="slider__slide">
-                        <img src="./images/christopher-burns-8KfCR12oeUM-unsplash.jpg" class="slider__image"alt="">
+                    <div class="slider__slide">
+                        <img src="./images/BackgroundImage-9.png" class="slider__image"alt="">
                         <div class="slider__details">
-                            <h1 class="slider__details--title">Slider 4</h1>
-                            <h4 class="slider__details--subtitle title">Company Registration</h4>
+                            <h1 class="slider__details--title">Social Dialogs</h1>
+                            <h4 class="slider__details--subtitle title">Social Dialogs</h4>
                             <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
-                            <button class="slider__details--button">Click Here</button>
+                            <button class="slider__details--button" data-title="Social Dialogs">Book This Service</button>
                         </div>
-                    </div> -->
+                    </div>
                     <!-- <div class="slider__slide">
                         <img src="./images/k-mitch-hodge-Esi7nknKxmw-unsplash.jpg" class="slider__image"alt="">
                         <div class="slider__details">
@@ -148,15 +150,15 @@
                             <button class="slider__details--button">Click Here</button>
                         </div>
                     </div> -->
-                    <!-- <div class="slider__slide">
-                        <img src="./images/campaign-creators-gMsnXqILjp4-unsplash.jpg" class="slider__image"alt="">
+                    <div class="slider__slide">
+                        <img src="./images/BackgroundImage-10.png" class="slider__image"alt="">
                         <div class="slider__details">
                             <h1 class="slider__details--title">Social Intelligence</h1>
                             <h4 class="slider__details--subtitle title">Communicating amoung members</h4>
                             <p class="slider__details--description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt eaque aliquam ducimus ipsa reiciendis, quae aperiam ut sed rerum excepturi perferendis ullam nemo a. In quae distinctio molestias ducimus repellat?</p>
-                            <button class="slider__details--button">Click Here</button>
+                            <button class="slider__details--button">Book This Service</button>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="slider__buttons">
                         <div class="slider__buttons--left">
                         <svg>
@@ -277,18 +279,13 @@
                     </div>
                     <h4 class="services__panel--subheading">Business Management</h4>
                     <ul class="services__panel--points" id="manageBtn">
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
+                        <li>Disput Resolution</li>
+                        <li>Design and Project Management</li>
+                        <li>Value and Risk Management</li>
+                        <li>Health and Safety Advice</li>
+                        <li>Business Planning</li>
+                        <li>Due Diligence</li>
+                        <li>Change Management Booking</li>
                     </ul>
                     <button class="services__panel--button" id="manageBtn">See More</button>
                 </div>
@@ -300,18 +297,13 @@
                     </div>
                     <h4 class="services__panel--subheading">Administration</h4>
                     <ul class="services__panel--points" id="adminBtn">
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
+                        <li>Assisting with Payroll</li>
+                        <li>Prepair time attendence for Employees</li>
+                        <li>Make Meeting Arrangements</li>
+                        <li>Prepair invocies and Quotations</li>
+                        <li>Make payments follow-ups</li>
+                        <li>Place order for PPE</li>
+                        <li>Prepair Contracts</li>
                     </ul>
                     <button class="services__panel--button" id="adminBtn">See More</button>
                 </div>
@@ -323,18 +315,18 @@
                     </div>
                     <h4 class="services__panel--subheading">Compliance</h4>
                     <ul class="services__panel--points" id="complyBtn">
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
-                        <li>Letter Of Good Will</li>
-                        <li>Lorem</li>
-                        <li>Dummy Text</li>
-                        <li>Special Texts</li>
-                        <li>Belong Here</li>
-                        <li>Creep Thoughts</li>
+                        <li>CIPC Returns Submission</li>
+                        <li>VAT registration & Returns Submittion</li>
+                        <li>PAYE</li>
+                        <li>UIF Registration & Renewals</li>
+                        <li>Letter of Good Standing</li>
+                        <li>Registration & ROE Submission</li>
+                        <li>Construction Safety Files</li>
+                        <li>CSD Update</li>
+                        <li>BBBEE Certificates</li>
+                        <li>Municipal Database</li>
+                        <li>CIBD Resistration & Update</li>
+                        <li>BOQ</li>
                     </ul>
                     <button class="services__panel--button" id="complyBtn">See More</button>
                 </div>
