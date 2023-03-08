@@ -1,3 +1,21 @@
+@mixin slideShape {
+  width: 8rem;
+  border-radius: 20rem;
+  position: absolute;
+  top: -5rem;
+  transform: rotate(40deg);
+  z-index: 999;
+  @media only screen and (max-width: $bigger-1) {
+    width: 6rem;
+  }
+
+  @media only screen and (max-width: $small) {
+    width: 6rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    width: 5rem;
+  }
+}
 .slider {
   width: 100%;
   height: 70rem;
@@ -219,6 +237,68 @@
     background-color: $primaryColor-2;
     border-radius: 50%;
     margin-right: 1rem;
+  }
+}
+.slider__shape {
+  @include slideShape;
+  height: 40rem;
+  top: -5rem;
+  right: 20rem;
+  background: linear-gradient(
+    0.77deg,
+    rgba(213, 124, 255, 0.4) 31.93%,
+    rgba(213, 124, 255, 0) 128.9%
+  );
+
+  @media only screen and (max-width: $bigger-2) {
+    right: 17rem;
+    height: 35rem;
+  }
+  @media only screen and (max-width: $bigger-1) {
+    right: 14rem;
+    height: 35rem;
+  }
+  @media only screen and (max-width: $medium) {
+    right: 14rem;
+    height: 29rem;
+  }
+  @media only screen and (max-width: $medium-2) {
+    right: 13rem;
+    height: 29rem;
+  }
+  @media only screen and (max-width: $small) {
+    right: 13rem;
+    height: 27rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    right: 13rem;
+    height: 27rem;
+  }
+}
+.slider__shape2 {
+  @include slideShape;
+  height: 35rem;
+  top: -5rem;
+  right: 3.5rem;
+  background: linear-gradient(
+    0.16deg,
+    rgba(254, 210, 56, 0.4) -20.16%,
+    rgba(254, 210, 56, 0) 78.93%
+  );
+  @media only screen and (max-width: $bigger-2) {
+    height: 32rem;
+  }
+  @media only screen and (max-width: $bigger-1) {
+    height: 30rem;
+  }
+  @media only screen and (max-width: $medium) {
+    height: 27rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    height: 26rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    height: 25rem;
   }
 }
 @keyframes sliderDescription {
