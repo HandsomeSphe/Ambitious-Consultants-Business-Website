@@ -794,25 +794,29 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .slider__modal {
-    width: 30rem;
+    width: 35rem;
+    height: 42rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     -webkit-animation: none;
             animation: none;
+    z-index: 19999;
   }
 }
 
 @media only screen and (max-width: 25em) {
   .slider__modal {
-    width: 30rem;
+    width: 35rem;
+    height: 40rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     -webkit-animation: none;
             animation: none;
+    z-index: 19999;
   }
 }
 
@@ -831,6 +835,20 @@ body {
 
 .slider__modal--heading {
   font-size: 1.55rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .slider__modal--heading {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .slider__modal--heading {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .slider__modal--heading::after {
@@ -856,12 +874,40 @@ body {
           flex-direction: column;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .slider__modal--label {
+    width: 28.7rem;
+    font-size: 1.75rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .slider__modal--label {
+    width: 28.5rem;
+    font-size: 1.5rem;
+  }
+}
+
 .slider__modal--input {
   height: 2rem;
   margin-bottom: 1rem;
   border-radius: 0.1rem;
   border: none;
   margin-top: 0.2rem;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .slider__modal--input {
+    height: 3rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .slider__modal--input {
+    height: 2.9rem;
+    margin-bottom: 1.2rem;
+  }
 }
 
 .slider__modal--input:active, .slider__modal--input:focus {
@@ -877,6 +923,18 @@ body {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 31.25em) {
+  .slider__modal--submit {
+    height: 3rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .slider__modal--submit {
+    height: 2.9rem;
+  }
+}
+
 .showModal {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -888,6 +946,20 @@ body {
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 31.25em) {
+  .remove__icon {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .remove__icon {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
 }
 
 @-webkit-keyframes slidedInModal {

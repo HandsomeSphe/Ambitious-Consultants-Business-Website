@@ -16,18 +16,22 @@
   display: none;
 
   @media only screen and (max-width: $small) {
-    width: 30rem;
+    width: 35rem;
+    height: 42rem;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     animation: none;
+    z-index: 19999;
   }
   @media only screen and (max-width: $smaller) {
-    width: 30rem;
+    width: 35rem;
+    height: 40rem;
     transform: translate(-50%, -50%);
     top: 50%;
     left: 50%;
     animation: none;
+    z-index: 19999;
   }
 
   &--wrapper {
@@ -38,6 +42,14 @@
   }
   &--heading {
     font-size: $heading-font--size;
+    @media only screen and (max-width: $small) {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
 
     &::after {
       content: "";
@@ -56,6 +68,14 @@
     margin-bottom: 0.2rem;
     display: flex;
     flex-direction: column;
+    @media only screen and (max-width: $small) {
+      width: 28.7rem;
+      font-size: 1.75rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      width: 28.5rem;
+      font-size: 1.5rem;
+    }
   }
   &--input {
     height: 2rem;
@@ -63,6 +83,14 @@
     border-radius: 0.1rem;
     border: none;
     margin-top: 0.2rem;
+    @media only screen and (max-width: $small) {
+      height: 3rem;
+      margin-bottom: 1.5rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      height: 2.9rem;
+      margin-bottom: 1.2rem;
+    }
     &:active,
     &:focus {
       outline-color: $primaryColor-2;
@@ -75,6 +103,12 @@
     background-color: $primaryColor-2;
     border-radius: 0.2rem;
     cursor: pointer;
+    @media only screen and (max-width: $small) {
+      height: 3rem;
+    }
+    @media only screen and (max-width: $smaller) {
+      height: 2.9rem;
+    }
   }
 }
 .showModal {
@@ -85,6 +119,14 @@
   width: 2rem;
   height: 2rem;
   cursor: pointer;
+  @media only screen and (max-width: $small) {
+    width: 2.9rem;
+    height: 2.9rem;
+  }
+  @media only screen and (max-width: $smaller) {
+    width: 2.7rem;
+    height: 2.7rem;
+  }
 }
 
 @keyframes slidedInModal {
