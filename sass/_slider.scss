@@ -301,6 +301,27 @@
     height: 25rem;
   }
 }
+.slider__dots {
+  width: 20rem;
+  height: 3rem;
+  display: flex;
+  position: absolute;
+  transform: translate(-50%, -85%);
+  top: 85%;
+  left: 50%;
+  z-index: 999;
+
+  &--dot {
+    width: 2rem;
+    height: 0.55rem;
+    background-color: #fff;
+    border-radius: 2rem;
+    margin-right: 1.1rem;
+  }
+}
+.dot__active {
+  background-color: $primaryColor-2;
+}
 @keyframes sliderDescription {
   0% {
     transform: translateX(-30rem);
