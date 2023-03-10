@@ -251,23 +251,12 @@ formbutton("create", {
     },
   },
 });
+/**/ /////////////////// Leaflet Map ///////////*/
 
-// const clearInputFields = (inputsArr) => {
-//   inputsArr.forEach((input) => {
-//     input.value = "";
-//   });
-// };
-
-// modalForm.addEventListener("submit", function (e) {
-//   inputs.forEach((input, i) => {
-//     user.name = inputs[0].value;
-//     user.lastName = inputs[1].value;
-//     user.email = inputs[2].value;
-//     user.service = inputs[3].value;
-//     user.phone = inputs[4].value;
-//   });
-//   setTimeout(() => {
-//     sliderModal.classList.toggle("showModal");
-//   }, 999);
-//   clearInputFields(inputs);
-// });
+let map = L.map("map").setView([-29.72333, 30.98271], 13);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  maxZoom: 19,
+  attribution:
+    '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+}).addTo(map);
+let maker = L.marker([-29.72333, 30.98271]).addTo(map);
