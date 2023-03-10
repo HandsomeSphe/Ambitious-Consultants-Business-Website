@@ -311,6 +311,10 @@
   left: 50%;
   z-index: 999;
 
+  @media only screen and (max-width: $smaller) {
+    display: none;
+  }
+
   &--dot {
     width: 2rem;
     height: 0.55rem;

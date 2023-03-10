@@ -260,3 +260,7 @@ L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
     '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
 }).addTo(map);
 let maker = L.marker([-29.72333, 30.98271]).addTo(map);
+let popup = L.popup()
+  .setLatLng([-29.718, 30.98271])
+  .setContent("Ambitious Business Consultants")
+  .openOn(map);

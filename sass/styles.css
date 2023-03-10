@@ -766,8 +766,8 @@ body {
 }
 
 .slider__modal {
-  width: 27rem;
-  height: 33rem;
+  width: 30rem;
+  height: 37rem;
   position: absolute;
   border-radius: 1rem;
   top: 15rem;
@@ -834,7 +834,7 @@ body {
 }
 
 .slider__modal--heading {
-  font-size: 1.55rem;
+  font-size: 2.05rem;
 }
 
 @media only screen and (max-width: 31.25em) {
@@ -861,8 +861,8 @@ body {
 }
 
 .slider__modal--label {
-  width: 21rem;
-  font-size: 1.1rem;
+  width: 24rem;
+  font-size: 1.27rem;
   font-family: "Inter", sans-serif;
   margin-bottom: 0.2rem;
   display: -webkit-box;
@@ -889,8 +889,8 @@ body {
 }
 
 .slider__modal--input {
-  height: 2rem;
-  margin-bottom: 1rem;
+  height: 2.5rem;
+  margin-bottom: 1.5rem;
   border-radius: 0.1rem;
   border: none;
   margin-top: 0.2rem;
@@ -915,7 +915,7 @@ body {
 }
 
 .slider__modal--submit {
-  height: 2.5rem;
+  height: 2.7rem;
   border: none;
   color: #fff;
   background-color: #ffc000ff;
@@ -1897,6 +1897,12 @@ body {
   z-index: 999;
 }
 
+@media only screen and (max-width: 25em) {
+  .slider__dots {
+    display: none;
+  }
+}
+
 .slider__dots--dot {
   width: 2rem;
   height: 0.55rem;
@@ -2013,6 +2019,34 @@ body {
   padding: 5rem;
 }
 
+@media only screen and (max-width: 25em) {
+  .findus {
+    height: auto;
+    padding: 2rem;
+  }
+}
+
+.findus--heading {
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 7rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 10rem;
+}
+
+.findus--heading::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 4rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  background-color: #9fa1a1;
+}
+
 .findus__wrapper {
   width: 100%;
   height: 100%;
@@ -2021,13 +2055,47 @@ body {
   display: flex;
 }
 
+@media only screen and (max-width: 25em) {
+  .findus__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .findus__mapbox {
   width: 45rem;
-  height: 45rem;
+  height: 37rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .findus__mapbox {
+    width: 43rem;
+    margin: 0 auto;
+  }
+}
+
+.findus__physicalAddress {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+}
+
+@media only screen and (max-width: 25em) {
+  .findus__physicalAddress {
+    margin: 2rem 0 0 0;
+  }
 }
 
 #map {
   width: 100%;
-  height: 45rem;
+  height: 37rem;
 }
 /*# sourceMappingURL=styles.css.map */
