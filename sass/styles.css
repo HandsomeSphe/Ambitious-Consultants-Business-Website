@@ -794,7 +794,7 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .slider__modal {
-    width: 35rem;
+    width: 36rem;
     height: 42rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -808,7 +808,7 @@ body {
 
 @media only screen and (max-width: 25em) {
   .slider__modal {
-    width: 35rem;
+    width: 36rem;
     height: 40rem;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -876,15 +876,15 @@ body {
 
 @media only screen and (max-width: 31.25em) {
   .slider__modal--label {
-    width: 28.7rem;
-    font-size: 1.75rem;
+    width: 100%;
+    font-size: 1.85rem;
   }
 }
 
 @media only screen and (max-width: 25em) {
   .slider__modal--label {
-    width: 28.5rem;
-    font-size: 1.5rem;
+    width: 100%;
+    font-size: 1.7rem;
   }
 }
 
@@ -915,7 +915,7 @@ body {
 }
 
 .slider__modal--submit {
-  height: 2.7rem;
+  height: 2.9rem;
   border: none;
   color: #fff;
   background-color: #ffc000ff;
@@ -1037,9 +1037,9 @@ body {
 }
 
 .navbar__list {
-  -webkit-box-flex: 35%;
-      -ms-flex: 35% 0 0px;
-          flex: 35% 0 0;
+  -webkit-box-flex: 43%;
+      -ms-flex: 43% 0 0px;
+          flex: 43% 0 0;
   width: 100%;
   list-style-type: none;
   font-size: 1.5rem;
@@ -2015,7 +2015,7 @@ body {
 
 .findus {
   width: 100%;
-  height: 60rem;
+  height: 70rem;
   padding: 5rem;
 }
 
@@ -2077,7 +2077,7 @@ body {
 }
 
 .findus__physicalAddress {
-  margin-left: 2rem;
+  margin-left: 7rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2090,12 +2090,183 @@ body {
 
 @media only screen and (max-width: 25em) {
   .findus__physicalAddress {
-    margin: 2rem 0 0 0;
+    margin: 3rem 0 0 0;
   }
 }
 
 #map {
   width: 100%;
   height: 37rem;
+}
+
+.reviews {
+  width: 100%;
+  height: 67rem;
+  padding: 0 5rem;
+}
+
+.reviews--heading {
+  font-size: 1.9rem;
+  text-align: center;
+  margin: 7rem auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 7rem;
+}
+
+.reviews--heading::after {
+  content: "";
+  display: block;
+  clear: both;
+  width: 4rem;
+  height: 0.6rem;
+  border-radius: 2rem;
+  background-color: #9fa1a1;
+}
+
+.reviews__wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.reviews__cards {
+  width: 230rem;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.reviews__cards--card {
+  width: 51rem;
+  height: 28rem;
+  padding: 2.5rem 3rem;
+  background-color: #dddddd;
+  border-radius: 1rem;
+  -webkit-box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.07);
+          box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.07);
+  -webkit-transition: all ease-in 0.4s;
+  transition: all ease-in 0.4s;
+}
+
+.card__header--title {
+  font-size: 1.8rem;
+  color: rgba(0, 0, 0, 0.75);
+  margin-bottom: 2rem;
+}
+
+.card__message {
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.card__footer {
+  width: 100%;
+  font-size: 1.4rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 7rem 25rem;
+      grid-template-columns: 7rem 25rem;
+  -ms-grid-rows: 2rem 3rem;
+      grid-template-rows: 2rem 3rem;
+}
+
+.card__footer--pic1 {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/review--image-1 (1).jpg");
+}
+
+.card__footer--pic2 {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/review--image-2 (2).jpg");
+}
+
+.card__footer--pic3 {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/review--image-3 (3).jpg");
+}
+
+.card__footer--pic4 {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../images/art-hauntington-jzY0KRJopEI-unsplash.jpg");
+}
+
+.card__footer--name {
+  font-weight: 600;
+}
+
+.card__footer--location {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+}
+
+.reviews__buttons {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reviews__buttons--left, .reviews__buttons--right {
+  width: 3rem;
+  height: 3rem;
+  background-color: #0bb3eff4;
+  border-radius: 50%;
+  -webkit-box-shadow: 4px 4px 50px lightgray;
+          box-shadow: 4px 4px 50px lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 2rem;
+  cursor: pointer;
+}
+
+.reviews__buttons--left svg,
+.reviews__buttons--right svg {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: #fff;
 }
 /*# sourceMappingURL=styles.css.map */
